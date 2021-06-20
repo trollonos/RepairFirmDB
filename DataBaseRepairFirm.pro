@@ -16,26 +16,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    consumption.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    min_consumption.cpp \
-    repair_details.cpp \
-    total_time.cpp
+    src/consumption.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
+    src/min_consumption.cpp \
+    src/repair_details.cpp \
+    src/total_time.cpp \
 
 HEADERS += \
-    consumption.h \
-    mainwindow.h \
-    min_consumption.h \
-    repair_details.h \
-    total_time.h
+    src/consumption.h \
+    src/mainwindow.h \
+    src/min_consumption.h \
+    src/repair_details.h \
+    src/total_time.h \
 
 FORMS += \
-    consumption.ui \
-    mainwindow.ui \
-    min_consumption.ui \
-    repair_details.ui \
-    total_time.ui
+    ui_forms/consumption.ui \
+    ui_forms/mainwindow.ui \
+    ui_forms/min_consumption.ui \
+    ui_forms/repair_details.ui \
+    ui_forms/total_time.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
